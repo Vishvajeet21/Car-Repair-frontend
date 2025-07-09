@@ -88,7 +88,7 @@ body, html {
 }
 
 .c3 {
-    background-image: url(../Web_project/engine.jpg);
+    background-image: url(./Web_project/engine.jpg);
     height: 100%;
 
     background-attachment: fixed;
