@@ -79,6 +79,7 @@ body, html {
     }
 }
 
+
 .icon1 {
     background-color: #ffc107;
     color: white;
@@ -97,6 +98,7 @@ body, html {
     background-size: cover;
     width: 100%;
 }
+
 
 .icon2 {
     background-color: white;
@@ -276,4 +278,44 @@ body, html {
     position: absolute;
     height: 0.1px;
     left: 0%;
+}
+
+/* Ensure image scales and centers properly across all screen sizes */
+img.car-image {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 100;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Fine-tune for small screens */
+@media (max-width: 768px) {
+  img.car-image {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  .c1 {
+    padding-top: 20px;
+    min-height: auto;
+    background-image: linear-gradient(180deg,
+        #fff 20%,
+        #e7e9f5 50%,
+        #cdd2e0 100%);
+  }
+
+  .display-5 {
+    font-size: 1.8rem;
+  }
+
+  .custom-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
